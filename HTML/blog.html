@@ -1,145 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog | Kavindya Vidushani</title>
-    <link rel="stylesheet" href="../CSS/blog.css">
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../CSS/blog.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav id="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="logo">KV<span>.</span></a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-container">
+        <a href="../index.html" class="logo">KV<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
     </nav>
 
     <!-- Blog Header -->
     <section id="blog-header">
-        <div class="container">
-            <h2 class="section-title">My Blog</h2>
-            <p class="section-subtitle">Thoughts, tutorials, and insights from my journey in tech</p>
-        </div>
+      <div class="container">
+        <h2 class="section-title">My Blog</h2>
+        <p class="section-subtitle">
+          Thoughts, tutorials, and insights from my journey in tech
+        </p>
+      </div>
     </section>
 
     <!-- Blog Posts -->
     <section id="blog-posts">
-        <div class="container">
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="image-placeholder card-img">
-                        <i class="fas fa-image"></i>
-                        <span>Blog Cover Image</span>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> March 15, 2026</span>
-                            <span><i class="far fa-clock"></i> 5 min read</span>
-                        </div>
-                        <h3>Getting Started with Web Development</h3>
-                        <p>A beginner's guide to starting your web development journey with HTML, CSS, and JavaScript. Learn the fundamentals and build your first website.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="image-placeholder card-img">
-                        <i class="fas fa-image"></i>
-                        <span>Blog Cover Image</span>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> March 1, 2026</span>
-                            <span><i class="far fa-clock"></i> 8 min read</span>
-                        </div>
-                        <h3>Understanding Responsive Design</h3>
-                        <p>Learn how to build websites that look great on every device. From media queries to flexible grids, master the art of responsive web design.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="image-placeholder card-img">
-                        <i class="fas fa-image"></i>
-                        <span>Blog Cover Image</span>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> February 20, 2026</span>
-                            <span><i class="far fa-clock"></i> 6 min read</span>
-                        </div>
-                        <h3>My Experience at University of Moratuwa</h3>
-                        <p>Sharing my journey as an IT undergraduate — the challenges, the learnings, and the exciting projects I've worked on so far.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="image-placeholder card-img">
-                        <i class="fas fa-image"></i>
-                        <span>Blog Cover Image</span>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> February 5, 2026</span>
-                            <span><i class="far fa-clock"></i> 7 min read</span>
-                        </div>
-                        <h3>JavaScript Tips and Tricks</h3>
-                        <p>A collection of useful JavaScript tips that will boost your productivity and help you write cleaner, more efficient code.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
+      <div class="container">
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="image-placeholder card-img">
+              <img src="E:\Projects\My-Personal-Portfolio\Images\uni.jpg">
             </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> March 07, 2026</span>
+                <span><i class="far fa-clock"></i> 3 min read</span>
+              </div>
+              <h3>How to Remove Background from an Image Using GIMP</h3>
+              <p>
+                GIMP (GNU Image Manipulation Program) is a free and powerful
+                image editing software. It is widely used for photo editing,...
+              </p>
+              <a
+                href="https://medium.com/@kavindyajayathilaka269/how-to-remove-background-from-an-image-using-gimp-f478597e5ad3"
+                class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="image-placeholder card-img">
+            <img src="E:\Projects\My-Personal-Portfolio\Images\banner.png">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> March 25, 2026</span>
+                <span><i class="far fa-clock"></i> 2 min read</span>
+              </div>
+              <h3>The Power of Multimedia in Modern Web Development</h3>
+              <p>
+                Multimedia has become an essential part of modern web
+                development and digital communication. It refers to the...
+              </p>
+              <a
+                href="https://medium.com/@kavindyajayathilaka269/the-power-of-multimedia-in-modern-web-development-5a76f3997e08"
+                class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="image-placeholder card-img">
+              <i class="fas fa-image"></i>
+              <span>Blog Cover Image</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> March 29, 2026</span>
+                <span><i class="far fa-clock"></i> 2 min read</span>
+              </div>
+              <h3>The Importance of Text in Multimedia Design</h3>
+              <p>
+                Text is one of the most important elements in multimedia design.
+                It is used to communicate information, guide users, and support
+                other...
+              </p>
+              <a
+                href="https://medium.com/@kavindyajayathilaka269/the-importance-of-text-in-multimedia-design-b6fb4425e9ce"
+                class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="image-placeholder card-img">
+              <i class="fas fa-image"></i>
+              <span>Blog Cover Image</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> March 29, 2026</span>
+                <span><i class="far fa-clock"></i> 3 min read</span>
+              </div>
+              <h3>CSS: The Language of Web Design</h3>
+              <p>Introduction...</p>
+              <a
+                href="https://medium.com/@kavindyajayathilaka269/css-the-language-of-web-design-80b8211e6403"
+                class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="../index.html" class="logo">KV<span>.</span></a>
-                    <p>IT Undergraduate at University of Moratuwa.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="../index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="footer-social">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="../index.html" class="logo">KV<span>.</span></a>
+            <p>IT Undergraduate at University of Moratuwa.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Kavindya Vidushani. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Kavindya Vidushani. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="../JS/blog.js"></script>
-</body>
+  </body>
 </html>
