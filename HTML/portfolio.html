@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Kavindya Vidushani</title>
+    <link rel="stylesheet" href="../CSS/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">KV<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section id="portfolio-header">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <p class="section-subtitle">A showcase of my recent projects and work</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section id="portfolio-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="image-placeholder card-img">
+                        <i class="fas fa-image"></i>
+                        <span>Project Screenshot</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A responsive web application built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <div class="image-placeholder card-img">
+                        <i class="fas fa-image"></i>
+                        <span>Project Screenshot</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>A cross-platform mobile application developed with modern frameworks.</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="image-placeholder card-img">
+                        <i class="fas fa-image"></i>
+                        <span>Project Screenshot</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>A UI/UX design project focused on user experience and visual design.</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="image-placeholder card-img">
+                        <i class="fas fa-image"></i>
+                        <span>Project Screenshot</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Four</h3>
+                        <p>A full-stack web application with database integration.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <div class="image-placeholder card-img">
+                        <i class="fas fa-image"></i>
+                        <span>Project Screenshot</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Five</h3>
+                        <p>An IoT-based application for smart home automation.</p>
+                        <div class="project-tags">
+                            <span>IoT</span>
+                            <span>Python</span>
+                            <span>Arduino</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="image-placeholder card-img">
+                        <i class="fas fa-image"></i>
+                        <span>Project Screenshot</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Six</h3>
+                        <p>A brand identity and graphic design project.</p>
+                        <div class="project-tags">
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">KV<span>.</span></a>
+                    <p>IT Undergraduate at University of Moratuwa.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kavindya Vidushani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/portfolio.js"></script>
+</body>
+</html>
