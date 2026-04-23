@@ -109,17 +109,19 @@ a { text-decoration: none; color: inherit; }
     aspect-ratio: 1;
     background: linear-gradient(135deg, #f5f7fa, #e8ecf1);
     border-radius: 20px;
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 12px;
     color: #aaa;
     border: 2px dashed #ddd;
+    object-fit: cover;
 }
 
 .image-placeholder i { font-size: 48px; }
 .image-placeholder span { font-size: 14px; font-weight: 500; }
+.image-placeholder img {width: 100%;height: 100%;}
 
 .card-img {
     aspect-ratio: 16/10;

@@ -138,6 +138,7 @@ a { text-decoration: none; color: inherit; }
 
 .about-image {
     flex: 0 0 350px;
+    
 }
 
 .about-text {
@@ -208,7 +209,7 @@ a { text-decoration: none; color: inherit; }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     align-items: center;
 }
@@ -271,6 +272,140 @@ a { text-decoration: none; color: inherit; }
 }
 
 #education .section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #ff004f;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.image-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, #f9f6f6, #f9f7f7);
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #aaa;
+    border: 0px dashed #0a0a0a;
+    object-fit: cover;
+}   
+
+.image-placeholder img {width: 80%;height: auto;}
+
+
+#featured {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.featured-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.featured-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 0, 79, 0.1);
+}
+
+
+
+.timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #eee;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -35px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #ff004f;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.timeline-content h4 {
+    font-size: 16px;
+    color: #ff004f;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.timeline-content p:last-child {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ==================== FAVOURITES TIMELINE ==================== */
+#Favorites {
+    padding: 80px 0;
+}
+
+#Favorites .section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #1a1a1a;
+}
+
+#Favorites .section-title::after {
     content: '';
     width: 60px;
     height: 4px;

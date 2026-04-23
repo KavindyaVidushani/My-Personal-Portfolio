@@ -2,42 +2,57 @@
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
-});
-
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
     });
-});
 
-// Contact Form Handling
-const contactForm = document.getElementById('contactForm');
-const formMessage = document.getElementById('formMessage');
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+}
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+// Initialize EmailJS
+(function () {
+    emailjs.init("9dNcrQAkHafaSe4BB");
 
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const subject = document.getElementById('subject').value.trim();
-    const message = document.getElementById('message').value.trim();
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
 
-    if (!name || !email || !subject || !message) {
-        formMessage.textContent = 'Please fill in all fields.';
-        formMessage.className = 'form-message error';
-        return;
-    }
+    if (!contactForm) return;
 
-    // Simulate form submission
-    formMessage.textContent = 'Thank you! Your message has been sent successfully.';
-    formMessage.className = 'form-message success';
-    contactForm.reset();
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    setTimeout(() => {
-        formMessage.className = 'form-message';
-    }, 5000);
-});
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !subject || !message) {
+            formMessage.textContent = 'Please fill in all fields.';
+            formMessage.className = 'form-message error';
+            return;
+        }
+
+        emailjs.sendForm("service_m9j3tr3", "template_y6dm43a", contactForm)
+            .then(() => {
+                formMessage.textContent = 'Message sent successfully!';
+                formMessage.className = 'form-message success';
+                contactForm.reset();
+            })
+            .catch((error) => {
+                console.error(error);
+                formMessage.textContent = 'Failed to send message.';
+                formMessage.className = 'form-message error';
+            });
+
+        setTimeout(() => {
+            formMessage.className = 'form-message';
+        }, 5000);
+    });
+})();
